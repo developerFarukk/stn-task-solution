@@ -1,6 +1,6 @@
 
 
-//  1. Array Filtering and Mapping   
+//  Task - 1. Array Filtering and Mapping   
 
 const people = [
   { name: 'Alice', age: 25, gender: 'female' },
@@ -19,7 +19,7 @@ function filterAndMap(peopleArray) {
 
 
 
-// 2. Object Manipulation
+// Task - 2. Object Manipulation
 
 const books = [
   { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
@@ -34,7 +34,7 @@ function getBookTitles(booksArray) {
 // console.log(getBookTitles(books)); 
 
 
-// 3. Function Composition
+// Task - 3. Function Composition
 
 function square(num) {
   return num * num;
@@ -55,7 +55,7 @@ function composeFunctions(num) {
 // console.log(composeFunctions(3));
 
 
-// 4. Sorting Objects
+// Task - 4. Sorting Objects
 
 const cars = [
   { make: 'Toyota', model: 'Camry', year: 2018 },
@@ -70,7 +70,7 @@ function sortCarsByYear(carsArray) {
 // console.log(sortCarsByYear(cars));
 
 
-// 5. Find and Modify
+//  Task - 5. Find and Modify
 
 const myPeople = [
   { name: 'Alice', age: 25 },
@@ -89,7 +89,7 @@ function updateAgeByName(peopleArray, name, newAge) {
 // console.log(updateAgeByName(myPeople, 'Bob', 31));
 
 
-// 6. Array Reduction
+// Task - 6. Array Reduction
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -103,7 +103,7 @@ function sumEvenNumbers(numbersArray) {
 
 
 
-// 7. Unique Values
+// Task - 7. Unique Values
 
 const numbers1 = [1, 2, 2, 3, 4, 4, 5, 5, 5, 6];
 
