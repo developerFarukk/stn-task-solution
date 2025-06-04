@@ -53,3 +53,62 @@ function composeFunctions(num) {
 }
 
 // console.log(composeFunctions(3));
+
+
+// 4. Sorting Objects
+
+const cars = [
+  { make: 'Toyota', model: 'Camry', year: 2018 },
+  { make: 'Honda', model: 'Accord', year: 2020 },
+  { make: 'Ford', model: 'Mustang', year: 2015 }
+];
+
+function sortCarsByYear(carsArray) {
+  return carsArray.sort((a, b) => a.year - b.year);
+}
+
+// console.log(sortCarsByYear(cars));
+
+
+// 5. Find and Modify
+
+const myPeople = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 35 }
+]
+
+function updateAgeByName(peopleArray, name, newAge) {
+  const person = peopleArray.find(p => p.name === name);
+  if (person) {
+    person.age = newAge;
+  }
+  return peopleArray;
+}
+
+// console.log(updateAgeByName(myPeople, 'Bob', 31));
+
+
+// 6. Array Reduction
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function sumEvenNumbers(numbersArray) {
+  return numbersArray.reduce((sum, num) => {
+    return num % 2 === 0 ? sum + num : sum;
+  }, 0);
+}
+
+// console.log(sumEvenNumbers(numbers));
+
+
+
+// 7. Unique Values
+
+const numbers1 = [1, 2, 2, 3, 4, 4, 5, 5, 5, 6];
+
+function getUniqueNumbers(numbersArray) {
+  return [...new Set(numbersArray)];
+}
+
+// console.log(getUniqueNumbers(numbers1));
